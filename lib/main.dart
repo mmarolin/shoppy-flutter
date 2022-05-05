@@ -19,12 +19,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (ctx) => Products(),
+      create: (_) => Products(),
       child: MaterialApp(
           title: 'Shoppy',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
               colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.orange),
+              scaffoldBackgroundColor: Color.fromARGB(255, 249, 243, 232),
               textTheme: GoogleFonts.bebasNeueTextTheme(),
               appBarTheme: AppBarTheme(
                 systemOverlayStyle: SystemUiOverlayStyle.dark,
